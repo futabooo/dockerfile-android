@@ -8,8 +8,7 @@ RUN \
 # Install Java7, Java6
 RUN \
 #  apt-get install -y openjdk-8-jdk && \
-  apt-get install -y openjdk-7-jdk \
-  apt-get install -y openjdk-6-jdk
+  apt-get install -y openjdk-7-jdk openjdk-6-jdk
 
 # Install Android SDK
 RUN \
