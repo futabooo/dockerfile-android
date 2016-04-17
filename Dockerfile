@@ -15,7 +15,7 @@ RUN \
   cd /tmp && \
   curl -L -O http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz && \
   tar xf android-sdk_r24.4.1-linux.tgz -C /opt && \
-  rm android-sdk_r24.4.1-linux.tgz
+  rm android-sdk_r24.4.1-linux.tgz && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter tools && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter platform-tools,build-tools-23.0.2,android-23 && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-google_play_services,extra-google-m2repository,extra-android-m2repository
@@ -28,11 +28,10 @@ RUN \
   rm gradle-2.10-all.zip
 
 # Setup Environment
-ENV \
-  JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64 \
-  JAVA7_HOME /usr/lib/jvm/java-7-openjdk-amd64 \
-  JAVA6_HOME /usr/lib/jvm/java-6-openjdk-amd64 \
-  JAVA_HOME JAVA8_HOME \
-  ANDROID_HOME /opt/android-sdk-linux \
-  GRADLE_HOME /opt/gradle-2.10 \
-  PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platfomr-tools:$GRADLE_HOME/bin
+ENV JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64
+ENV JAVA7_HOME /usr/lib/jvm/java-7-openjdk-amd64
+ENV JAVA6_HOME /usr/lib/jvm/java-6-openjdk-amd64
+ENV JAVA_HOME $JAVA8_HOME
+ENV ANDROID_HOME /opt/android-sdk-linux
+ENV GRADLE_HOME /opt/gradle-2.10
+ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platfomr-tools:$GRADLE_HOME/bin
