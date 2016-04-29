@@ -3,7 +3,7 @@ FROM ubuntu:15.04
 MAINTAINER futabooo <mail@futabooo.com>
 
 RUN \
-  apt-get update -y && apt-get install -y curl unzip
+  apt-get update -y && apt-get install -y curl unzip git
 
 # Install Java7, Java6
 RUN \
