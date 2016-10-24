@@ -18,11 +18,11 @@ RUN \
 # Install Android SDK
 RUN \
   cd /tmp && \
-  curl -L -O http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz && \
-  tar xf android-sdk_r24.4.1-linux.tgz -C /opt && \
-  rm android-sdk_r24.4.1-linux.tgz && \
+  curl -L -O http://dl.google.com/android/android-sdk_r25.2.2-linux.tgz && \
+  tar xf android-sdk_r25.2.2-linux.tgz -C /opt && \
+  rm android-sdk_r25.2.2-linux.tgz && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter tools && \
-  echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter platform-tools,build-tools-23.0.2,build-tools-23.0.3,build-tools-24.0.0,build-tools-24.0.2,android-23,android-24 && \
+  echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter platform-tools,build-tools-23.0.2,build-tools-23.0.3,build-tools-24.0.0,build-tools-24.0.2,build-tools-25.0.0,android-24,android-25 && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-google_play_services,extra-google-m2repository,extra-android-m2repository
 
 # Install Gradle
