@@ -8,7 +8,7 @@
 - OpenJDK 7
 - OpenJDK 6
 - Android SDK 25.2.2
-- Build tools 24.0.0, 24.0.2, 25.0.0
+- Build tools 23.0.2, 23.0.3, 24.0.0, 24.0.2, 25.0.0
 - Android API 23, 24, 25
 - Google Play Services
 - Android Support Libraries
