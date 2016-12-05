@@ -42,6 +42,9 @@ RUN \
   unzip gradle-2.10-all.zip -d /opt && \
   rm gradle-2.10-all.zip
 
+# Make licenses directory
+RUN mkdir /opt/android-sdk-linux/licenses
+
 # Setup Environment
 ENV JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV JAVA7_HOME /usr/lib/jvm/java-7-openjdk-amd64
