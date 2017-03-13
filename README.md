@@ -12,4 +12,4 @@
 - Android API 23, 24, 25
 - Google Play Services
 - Android Support Libraries
-- Gradle 2.10
+- Gradle 3.3

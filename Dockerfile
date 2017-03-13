@@ -38,9 +38,9 @@ RUN \
 # Install Gradle
 RUN \
   cd /tmp && \
-  curl -L -O http://services.gradle.org/distributions/gradle-2.10-all.zip && \
-  unzip gradle-2.10-all.zip -d /opt && \
-  rm gradle-2.10-all.zip
+  curl -L -O http://services.gradle.org/distributions/gradle-3.3-all.zip && \
+  unzip gradle-3.3-all.zip -d /opt && \
+  rm gradle-3.3-all.zip
 
 # Make licenses directory
 RUN mkdir /opt/android-sdk-linux/licenses
@@ -51,5 +51,5 @@ ENV JAVA7_HOME /usr/lib/jvm/java-7-openjdk-amd64
 ENV JAVA6_HOME /usr/lib/jvm/java-6-openjdk-amd64
 ENV JAVA_HOME $JAVA8_HOME
 ENV ANDROID_HOME /opt/android-sdk-linux
-ENV GRADLE_HOME /opt/gradle-2.10
+ENV GRADLE_HOME /opt/gradle-3.3
 ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platfomr-tools:$GRADLE_HOME/bin
