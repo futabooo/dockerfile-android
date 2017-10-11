@@ -23,6 +23,8 @@ RUN \
   rm android-sdk_r24.4.1-linux.tgz && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter tools && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter platform-tools && \
+  echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-25.0.2 && \
+  echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-25.0.1 && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-25.0.0 && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-24.0.2 && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-24.0.0 && \
