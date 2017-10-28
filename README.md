@@ -8,8 +8,8 @@
 - OpenJDK 7
 - OpenJDK 6
 - Android SDK 24.4.1
-- Build tools 23.0.2, 23.0.3, 24.0.0, 24.0.2, 25.0.0, 25.0.1, 25.0.2
-- Android API 23, 24, 25
+- Build tools 23.0.2, 23.0.3, 24.0.0, 24.0.2, 25.0.0, 25.0.1, 25.0.2, 26.0.2
+- Android API 23, 24, 25, 26
 - Google Play Services
 - Android Support Libraries
 - Gradle 3.3
